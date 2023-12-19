@@ -5,7 +5,13 @@ public class ManipolazineStringhe {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Digita una frase: ");
         String txt = scanner.nextLine();
-   
-        scanner.close();
+
+        int lunghezza = txt.length();
+
+        System.out.println("La lunghezza della tua stringa è: " + lunghezza );
+    }
+
+    public static int lunghezza (String txt){
+        return + txt.length();   
     }
 }
