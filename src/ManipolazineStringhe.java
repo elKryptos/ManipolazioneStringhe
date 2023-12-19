@@ -6,5 +6,6 @@ public class ManipolazineStringhe {
         System.out.print("Digita una frase: ");
         String txt = scanner.nextLine();
    
+        scanner.close();
     }
 }
