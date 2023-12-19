@@ -9,10 +9,12 @@ public class ManipolazineStringhe {
         int lunghezza = txt.length();
         String maiuscolo = txt.toUpperCase();
         String minuscolo = txt.toLowerCase();
+        String primaCap = Character.toUpperCase(txt.charAt(0)) + txt.substring(1);
 
         System.out.println("La lunghezza della tua stringa è: " + lunghezza );
         System.out.println("La tua stringa in maiuscolo: " + maiuscolo );
         System.out.println("La tua stringa in minuscolo: " + minuscolo );
+        System.out.println("La tua stringa coma la prima lettera in maiuscolo: " + primaCap);
     }
 
     public static int lunghezza (String txt){
@@ -27,5 +29,10 @@ public class ManipolazineStringhe {
         return + txt.toLowerCase();   
     }
 
+    public static String primaCap (String txt){
+        return + Character.toUpperCase(txt.charAt(0)) + txt.substring(1);   
+    }
+
+    
     
 }
