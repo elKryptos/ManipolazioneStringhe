@@ -10,11 +10,13 @@ public class ManipolazineStringhe {
         String maiuscolo = txt.toUpperCase();
         String minuscolo = txt.toLowerCase();
         String primaCap = Character.toUpperCase(txt.charAt(0)) + txt.substring(1);
+        String ultDue = txt.substring(lunghezza -2);
 
         System.out.println("La lunghezza della tua stringa è: " + lunghezza );
         System.out.println("La tua stringa in maiuscolo: " + maiuscolo );
         System.out.println("La tua stringa in minuscolo: " + minuscolo );
         System.out.println("La tua stringa coma la prima lettera in maiuscolo: " + primaCap);
+        System.out.println("Gli ultimi 2 digiti della tua stringa sono: " +ultDue);
     }
 
     public static int lunghezza (String txt){
@@ -33,6 +35,7 @@ public class ManipolazineStringhe {
         return + Character.toUpperCase(txt.charAt(0)) + txt.substring(1);   
     }
 
-    
-    
+       public static String ultDue (String txt){
+        return +txt.substring(lunghezza - 2);   
+    }
 }
